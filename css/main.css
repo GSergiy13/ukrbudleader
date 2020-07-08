@@ -1,0 +1,682 @@
+@font-face {
+    font-family: OswaldBold; /* Гарнитура шрифта */
+    src: url(../fonts/otf/Oswald-Bold.otf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: OswaldExtraLight; /* Гарнитура шрифта */
+    src: url(../fonts/otf/Oswald-ExtraLight.otf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: OswaldLight; /* Гарнитура шрифта */
+    src: url(../fonts/otf/Oswald-Light.otf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: OswaldMedium; /* Гарнитура шрифта */
+    src: url(../fonts/otf/Oswald-Medium.otf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: OswaldRegular; /* Гарнитура шрифта */
+    src: url(../fonts/otf/Oswald-Regular.otf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: OswaldSemiBold; /* Гарнитура шрифта */
+    src: url(../fonts/otf/Oswald-SemiBold.otf); /* Путь к файлу со шрифтом */
+}
+
+
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}
+
+html.js .loader {
+	background: none repeat scroll 0 0 #ffffff;
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+}
+html.js .loader_inner {
+	background-image: url("../img/preloader.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #fff;
+	height: 60px;
+	width: 60px;
+	margin-top: -30px;
+	margin-left: -30px;
+	left: 50%;
+	top: 50%;
+	position: absolute;
+}
+
+body {
+	font-family: sans-serif;
+	font-size: 18px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.6;
+	font-family: 'OswaldLight', sans-serif;
+	overflow-x: hidden;
+}
+.hidden {
+	display: none;
+}
+/*Фон для Секцій*/
+
+header, section.call_bg,  section.aboutUs {
+	background-image: url("../img/header.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #fff;
+	height: auto;
+	width: 100%;
+	padding: 100px 0 40px 0;
+	position: relative;
+
+}
+section {
+	padding: 30px 0;
+}
+header {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}footer {
+    background-image: url("../img/footer_bott.jpg");
+     /* Create the parallax scrolling effect */
+    background-position: center;
+    background-repeat: no-repeat;
+  height: auto;
+  width: 100%;
+    padding: 50px 0;
+    color: #fff;
+}footer h2 {
+  text-align: center;
+  font-size: 22px;
+  margin: 0; 
+  padding: 0;font-family: 'OswaldSemiBold', sans-serif;
+}.popb form input {
+    width: 30%;
+    padding: 10px;
+    margin: 27px 0;
+}.popb form {
+    padding: 10px;
+    border: 3px solid #7619fd;
+}
+section.aboutUs {
+	background-image: url("../img/45.jpg");
+	   /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+        padding: 200px 0;
+}section.portfolio p {
+    font-size: 22px;
+    margin: -8px 0 0 0;
+    font-family: "OswaldExtraLight", sans-serif;
+}
+section.certificate {
+	background-image: url("../img/sec_4.jpg");
+	   /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;text-align: center;
+}footer span { font-weight: 900; background: #fff; margin-top: 20px; color: #333; padding: 5px; }
+section.call_bg {
+  background-image: url("../img/coll.jpg");
+     /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;text-align: center;
+}
+/*Фон для Секцій end*/
+.top_header {
+    background: #fff;
+    position: fixed;
+    top: -1px;
+    padding: 12px 0px;
+        box-shadow: 0 5px 20px rgba(109, 119, 128, 0.2);
+    width: 100%;
+    z-index: 2;
+}.top_header img.logoimg {
+    display: block;
+    text-align: center;
+    width: 34%;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 20;
+    left: 25%;
+}.tine_phone {
+    margin: 14px 0;
+    font-size: 21px;
+    font-family: "OswaldMedium", sans-serif;
+    text-align: right;
+}.tine_phone img {
+    width: 12%;
+    height: auto;
+    margin-top: -9px;
+}.header_top {
+  text-align: right;
+  color: #fff;    padding-top: 50px;
+    margin-bottom: 40px;
+}.header_top h1 {
+    text-transform: uppercase;
+    text-align: right;
+    border-right: 4px solid #c401b4;
+    padding-right: 10px;
+    font-size: 60px;
+    line-height: 69px;
+    font-family: 'OswaldSemiBold', sans-serif;
+}.header_top h1 span, header form h2 span, section.call_bg form h2 span , .slide_txt span, .silide_1 h2 span, section.certificate h2 span, h1 span, .tine_phone span, ul.menu_right a li:hover  {
+    background: linear-gradient(90deg, #c600b2, #7619fd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}.header_top img.imgstroy {
+    width: 20%;
+    height: auto;
+    position: absolute;
+    left: -10px;
+    top: 15px;
+}ul.menu_right {
+    text-align: left;
+    display: inline-block;
+    font-size: 17px;
+        margin-top: 20px;
+}.top_header ul a {
+    text-decoration: none;
+}.top_header ul li {
+    display: inline-block;
+    margin: 0 12px 0px 0;
+    text-transform: uppercase;
+    font-family: "OswaldSemiBold", sans-serif;
+    color: #333;
+}
+/*Кнопка */
+.btn {
+    padding: 15px 55px;
+	overflow: hidden;
+	font-family: 'Montserrat Alternates', sans-serif;
+    color: white;
+	letter-spacing: 1px;    
+    text-transform: uppercase;
+	font-weight: 600;
+    border-width: 0;    
+	transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+	outline: none;
+    cursor: pointer; 
+}.btn:before, .btn:after {    
+    content: "";
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+    height: 100%;
+    left: -110%;
+    top: 0;
+	opacity: 0.1;
+	background: black;    
+    transform: skewX(45deg);    
+	transition: .5s ease;
+}.btn:hover:before {
+    left: -10%;
+    transition: .3s ease;
+}.btn:hover:after {
+    left: -20%;
+}.btn1 {
+	background: linear-gradient(90deg, #c600b2, #7619fd);
+}/*Кнопка end*/
+h1 { line-height: 52px; text-transform: uppercase; text-align: center; font-size: 50px; font-family: "OswaldSemiBold", sans-serif;}
+.sec_items h2 {
+	font-family: "OswaldSemiBold", sans-serif;
+}.us_img img {
+    width: 100%;
+    height: auto;
+} section.certificate h2 {
+	text-transform: uppercase;
+	font-size: 28px;
+	font-family: "OswaldSemiBold", sans-serif;
+}
+.sec_items { text-align: center; }
+#gallery1 {
+  position: relative;
+  padding-top: 50%;
+  -moz-user-select: none; user-select: none;
+}h3.h3_all_best {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 27px;
+}
+
+#gallery1 img {
+  position: absolute;
+  top: 25%;
+  left: 12.5%;
+  max-width: 24.5%;
+  max-height: 49.5%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -moz-user-select: none; user-select: none;
+  cursor: zoom-in;
+
+}
+#gallery1 img:nth-child(4n-2) {left: 37.5%;}
+#gallery1 img:nth-child(4n-1) {left: 62.5%;}
+#gallery1 img:nth-child(4n) {left: 87.5%;}
+#gallery1 img:nth-child(n+5) {top: 75%;}
+#gallery1 img:focus {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 31;
+  max-width: 100%;
+  max-height: 100%;
+  outline: none;
+  pointer-events: none;
+}
+section.portfolio #gallery1 img:nth-child(n+5) {
+    top: 58%;
+}
+
+#gallery1 img:focus ~ div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 30;
+  background: rgba(240,240,240,.9);
+  cursor: zoom-out;
+}
+section.call_bg form, header form {
+    width: 100%;
+    background: #fff;
+    color: #333;
+    padding: 20px;
+}section.call_bg form input, header form input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px 20px;
+}section.call_bg form h2, header form h2 {
+    font-family: "OswaldMedium", sans-serif;
+    text-transform: uppercase;
+    font-size: 31px;
+    line-height: 37px;
+}
+.us_bg h2 {
+    text-transform: uppercase;
+    font-family: "OswaldMedium", sans-serif;
+    padding-top: 0;
+    margin-top: 0;
+    font-size: 30px;
+}footer p {
+    font-size: 14px;
+    margin: 0;
+    text-align: center;
+}
+.us_bg .p_us {
+    margin-bottom: 0;
+    color: #8215f1;
+    font-size: 18px;
+    font-family: "OswaldRegular", sans-serif;
+}
+.us_bg img { width: 100%; }
+.us_bg{
+  padding: 10px;
+    -webkit-box-shadow: 0 0 20px rgba(109, 119, 128, 0.2);
+    box-shadow: 0 0 20px rgba(109, 119, 128, 0.2);
+    overflow: hidden;
+    position: relative;
+}
+.sec_items img {
+    width: 90%;
+}
+.blocImg {
+ width: 100%;
+ height: 338px;
+ margin: 10px 0;
+ overflow: hidden;
+ cursor: pointer;
+}   .dws {
+ position: relative;
+}    .blocImg img {
+ width: 100%;
+ transition: .5s;
+}  .dws:hover .blocImg img {
+ transform: rotate(-10deg) scale(1.3);
+ filter: blur(1px);
+ opacity: .9;
+}    .blocText {
+ outline: 2px solid orange;
+ position: absolute;
+ top: 30px;
+ left: 30px;
+ right: 30px;
+ bottom: 30px;
+}.text {
+    color: #fff;
+    padding: 0 20px;
+    font-size: 18px;
+}    .text h2 {
+ font-size: 25px;
+ text-transform: uppercase;
+} .text h2 span {
+ color: orange;
+ padding-bottom: 3px;
+ border-bottom: 2px solid #fff;
+}    .text p {
+ position: absolute;
+ border-left: 4px solid orange;
+ padding: 0 10px;
+}    .blocText::before,
+.blocText::after {
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+}   .blocText::before {
+
+ transform: scale(0,1);
+}    .blocText::after {
+
+ transform: scale(1,0);
+}   .dws:hover .blocText::before,
+.dws:hover .blocText::after {
+ transform: scale(1,2);
+}    .dws:hover .text {
+ opacity: 2;
+
+}.certificates {text-align: center;}
+.certificates img { width: 100%;  }
+.certificates h1 {margin-top: 0; text-align: center; padding-top: 0;}
+.block{
+  position:relative;
+}
+.block:before{
+  content:'';
+  position:absolute;
+  bottom:6px;
+  left:10px;
+  width:25px;
+  height:30px;
+  background: linear-gradient(30deg, #999 1px, #f1f1f1 90%);
+  box-shadow: 0 0 0 1px #999 inset;
+  transform: skew(20deg, 20deg) rotate(-9deg);
+}.block:after{
+  content:'';
+  position:absolute;
+  bottom:22px;
+  left:40px;
+  width:50px;
+  height:50px;
+  transform:skew(-20deg);
+  z-index:-1; 
+}.block{
+  border-bottom-left-radius: 60px;
+}
+.block:before{
+   border-bottom-left-radius: 60px;
+}.block:after{
+  box-shadow: -20px 20px 8px rgba(0, 0, 0, 0.2);
+}
+.logo span {
+  font-family: "OswaldSemiBold", sans-serif;
+}.contacts_foot {
+    font-size: 23px;
+    text-align: right;
+}.silide_1 h2 {
+    font-family: "OswaldSemiBold", sans-serif;
+    text-transform: uppercase;
+    font-size: 26px;
+    text-align: center;
+}.slide_txt {
+    padding: 10px 0;
+}
+.popb {
+    padding: 20px 10px;
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+    background: #fff;
+}
+button.mfp-close {
+    right: 20%;
+}.slide_txt, .img_slid {
+  display: inline-block;
+  width: 49%;
+  height: 190px;
+}
+.text p span {
+    font-size: 20px;
+    background: #fff;
+    color: #950fe0;
+    padding: 1px 29px;
+    font-weight: 900;
+    margin-top: 15px;
+}
+.contacts ul li {
+    display: inline-block;
+    padding: 0px 5px;
+    font-family: "OswaldSemiBold", sans-serif;
+}
+.silide_1 ul>li, section.ul_liset ul>li{
+    position: relative;
+    font-size: 18px;
+    font-weight: 200;
+    color: #3c4145;
+    list-style: none;
+}.silide_1 ul>li:before, section.ul_liset ul>li:before {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    content: '';
+    background: url(../img/ul.png) no-repeat;
+    left: -32px;
+    top: 22%;
+}
+button.main_menu_btt {display: none;}
+section.portfolio #gallery1 {
+    padding-top: 60%;
+  }
+.ul_liset img { width: 100%; }
+.ul_liset h2 {
+    text-align: center;
+    font-size: 19px;
+}#arrowup {
+    position: fixed;
+    right: 30px;
+    bottom: 60px;
+    background: url(../img/up.png);
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: block;
+    z-index: 22;
+    border-radius: 50%;
+}#arrowup:hover { opacity: 0.7; }.bottom { padding: 5px; }
+
+
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+ul.menu_right {
+    padding: 5px 0;
+    text-align: right;
+    font-size: 14px;
+    display: block;
+}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+.header_top h1 {
+  text-align: center;
+  border-right: none;
+}
+.header_top {
+    text-align: center;
+}
+.us_bg img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+.main_menu_btt {
+    display: block  !important;
+    font-size: 35px;
+    color: #333;
+    background: none;
+    width: auto;
+    float: right;
+    border: none;
+    text-align: right;
+}   
+ul.menu_right {
+    width: 93%;
+    display: block;
+    position: absolute;
+    margin-top: 73px;
+    background: #ffff;
+}ul.menu_right li {
+    display: block;
+    text-align: center;
+}.hederimg { float: left; }
+.tine_phone, ul.menu_right {display: none;}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .top_header {
+    background: #fff;
+    position: relative;
+}
+  /*Disable Animation on Mobile Devices*/
+  .animated {
+    /*CSS transitions*/
+    -o-transition-property: none !important;
+    -moz-transition-property: none !important;
+    -ms-transition-property: none !important;
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    /*CSS transforms*/
+    -o-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    /*CSS animations*/
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+  }
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+.header_top h1 {
+      font-size: 36px;
+    line-height: 51px;
+}
+
+.us_bg img {
+    width: 75%;
+    }
+.blocImg img {
+    width: 154%;
+    transition: .5s;
+}h1 {font-size: 32px;
+    line-height: 42px;}
+    section.portfolio p {
+    font-size: 17px;    margin: 1px 0 0 0;
+}.text h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+}.text {
+    color: #fff;
+    padding: 0 20px;
+    font-size: 13px;
+}.blocImg {
+    width: 100%;
+    height: 256px;
+
+}
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
